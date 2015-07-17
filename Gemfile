@@ -6,6 +6,13 @@ gem 'rails', '4.2.3'
 
 gem 'bcrypt',               '3.1.7'
 
+#allow us to make sample users with semi-realistic names and email addresse
+gem 'faker',                '1.4.2'
+
+# paginate the users
+gem 'will_paginate',           '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
+
 gem 'bootstrap-sass',       '3.2.0.0'
 
 # Use SCSS for stylesheets
