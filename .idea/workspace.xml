@@ -98,8 +98,8 @@
       <file leaf-file-name="carrier_wave.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/carrier_wave.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2173913">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.24844721">
+              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -192,8 +192,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="205" />
-    <option name="y" value="158" />
+    <option name="x" value="128" />
+    <option name="y" value="416" />
     <option name="width" value="1351" />
     <option name="height" value="854" />
   </component>
@@ -1019,7 +1019,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="205" y="158" width="1351" height="854" extended-state="0" />
+    <frame x="128" y="416" width="1351" height="854" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25744843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1472,8 +1472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/carrier_wave.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2173913">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.24844721">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
           <folding />
         </state>
       </provider>
