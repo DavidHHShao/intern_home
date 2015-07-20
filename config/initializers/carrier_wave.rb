@@ -3,8 +3,8 @@ if Rails.env.production?
     config.fog_credentials = {
         # Configuration for Amazon S3
         :provider              => 'AWS',
-        :aws_access_key_id     => 'AWSAccessKeyId=AKIAJ5KXYDE2UOKGQUNA',
-        :aws_secret_access_key => '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'
+        :aws_access_key_id     => 'AKIAJ55YG24ETF4KIDPA',
+        :aws_secret_access_key => '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'
     }
     config.fog_directory     =  'internhomeuw'
   end
