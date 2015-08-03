@@ -5,13 +5,15 @@
     <%= Rinku.auto_link(micropost.content).html_safe %>
   </span>
 
-    <% (URI.extract(micropost.content, /http(s)?/)).each do |url| %>
-      <span class="content"> <h3><%= LinkThumbnailer.generate(url).title %></h3> </span>
-      <span class="content"> <%= LinkThumbnailer.generate(url).description %> </span>
-      <%= favicon_link_tag LinkThumbnailer.generate(url).favicon %>
+    <% urls = URI.extract(micropost.content, /http(s)?/).map!{|n| [n, LinkThumbnailer.generate(n)]} %>
+    <% urls.each do | url| %>
+      <span class="content"> <h3><%= link_to(url[1].title, url[0]) %></h3> </span>
+      <span class="content"> <%= url[1].description %>  </span>
+      <%= favicon_link_tag  url[1].favicon %>
       <span class="content">
-      <%=  LinkThumbnailer.generate(url).images %>
+      <%=  image_tag  url[1].images.first.src.to_s, size: "200" if ( url[1].images.size > 0) %>
       </span>
+
     <% end %>
 
   <span class="content">
