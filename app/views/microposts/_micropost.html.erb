@@ -3,11 +3,19 @@
   <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
   <span class="content">
     <%= Rinku.auto_link(micropost.content).html_safe %>
+  </span>
 
     <% (URI.extract(micropost.content, /http(s)?/)).each do |url| %>
-       <%= LinkThumbnailer.generate(url).title %>
+      <span class="content"> <%= LinkThumbnailer.generate(url).title %>
+                             <%= favicon_link_tag LinkThumbnailer.generate(url).favicon %>
+      </span>
+      <span class="content"> <%= LinkThumbnailer.generate(url).description%>  </span>
+      <span class="content">
+      <%= image_tag LinkThumbnailer.generate(url).images.first.src.to_s %>
+      </span>
     <% end %>
 
+  <span class="content">
     <%= image_tag micropost.picture.url if micropost.picture? %>
   </span>
   <span class="timestamp">
