@@ -9,7 +9,9 @@
       <span class="content"> <h3><%= LinkThumbnailer.generate(url).title %></h3> </span>
       <span class="content"> <%= LinkThumbnailer.generate(url).description %> </span>
       <%= favicon_link_tag LinkThumbnailer.generate(url).favicon %>
-     
+      <span class="content">
+      <%=  LinkThumbnailer.generate(url).images %>
+      </span>
     <% end %>
 
   <span class="content">
