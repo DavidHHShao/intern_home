@@ -8,7 +8,9 @@
     <% (URI.extract(micropost.content, /http(s)?/)).each do |url| %>
       <span class="content"> <h3><%= LinkThumbnailer.generate(url).title %></h3> </span>
       <span class="content"> <%= LinkThumbnailer.generate(url).description %> </span>
-    
+      <span class="content">
+          <%= image_tag LinkThumbnailer.generate(url).images.first.src.to_s %>
+      </span>
     <% end %>
 
   <span class="content">
