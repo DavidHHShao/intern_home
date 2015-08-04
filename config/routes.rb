@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+
+  get 'auth/:provider/callback' => 'sessions#create_facebook'
+
   resources :users do
     member do
       get :following, :followers

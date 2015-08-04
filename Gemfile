@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+#facebook login
+
+gem 'omniauth-facebook'
+
+
 # link preview
 gem 'link_thumbnailer'
 

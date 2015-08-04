@@ -25,4 +25,13 @@ class SessionsController < ApplicationController
     log_out if logged_in?
     redirect_to root_url
   end
+
+ # Line user = User.from_omniauth(env["omniauth.auth"]) has two purposes.Create a user IF his/her unique
+ # facebook uid is not in the database ELSE log this person in the app if the uid exists. More on this later.
+
+  def create_facebook
+    user = User.from_omniauth(env["omniauth.auth"])
+    log_in user
+    redirect_back_or user
+  end
 end
