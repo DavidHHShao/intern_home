@@ -126,6 +126,7 @@ class User < ActiveRecord::Base
       user.uid = auth.uid
       user.name = auth.info.name unless user.name != nil
       user.email =  SecureRandom.hex + '@example.com' unless user.email != nil
+      user.image = auth.info.image  unless user.image!= nil
       user.activated = true
       user.password = SecureRandom.urlsafe_base64 unless user.password != nil
       user.save!
