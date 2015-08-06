@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
 
+#email Form
 
+
+gem 'mail_form'
+gem 'simple_form'
 
 #facebook login
 
