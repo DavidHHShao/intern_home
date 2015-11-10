@@ -5,6 +5,6 @@ Intern Home is the place where Internship students can share their work and life
 https://internhome.herokuapp.com
 
 
-For Community Version, see internhome.club
+For Community Version, see https://internhome.club
 
 
