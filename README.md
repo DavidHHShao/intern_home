@@ -1,6 +1,3 @@
-# Ruby on Rails Tutorial: sample application
+# Intern Home 
 
-This is the sample application for the
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](http://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/).
+Intern Home is the place where Internship students can share their work and life experience during their internship. Learn and have fun together!
